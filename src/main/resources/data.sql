@@ -1,0 +1,10 @@
+INSERT INTO dresseur (id, nom, region) VALUES (1, 'Sacha', 'Kanto');
+INSERT INTO dresseur (id, nom, region) VALUES (2, 'Ondine', 'Kanto');
+INSERT INTO dresseur (id, nom, region) VALUES (3, 'Pierre', 'Kanto');
+INSERT INTO pokemon (id, nom, type, niveau, dresseur_id) VALUES (1, 'Pikachu', 'Électrik', 50, 1);
+INSERT INTO pokemon (id, nom, type, niveau, dresseur_id) VALUES (2, 'Dracaufeu', 'Feu', 60, 1);
+INSERT INTO pokemon (id, nom, type, niveau, dresseur_id) VALUES (3, 'Carapuce', 'Eau', 20, 1);
+INSERT INTO pokemon (id, nom, type, niveau, dresseur_id) VALUES (4, 'Stari', 'Eau', 15, 2);
+INSERT INTO pokemon (id, nom, type, niveau, dresseur_id) VALUES (5, 'Psykokwak', 'Eau', 25, 2);
+ALTER TABLE dresseur ALTER COLUMN id RESTART WITH 100;
+ALTER TABLE pokemon ALTER COLUMN id RESTART WITH 100;
